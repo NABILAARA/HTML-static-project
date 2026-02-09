@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #FFEFD5; 
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+h1 {
+  background: #FF4500;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+nav {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  margin: 20px 0;
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+  color: #FF6347; 
+  margin: 0 10px;
+}
+nav a:hover {
+  color: #32CD32; 
+}
+
+main {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFFACD; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 1.5rem;
+}
+
+footer {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FF4500; 
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  margin-top: 20px;
+}
+
+.kartu {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+
+  background-color: #32CD32;
+  color: #fff;
+}
+
+.konten {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+.edit-gambar {
+  width: 25%;
+  max-height: 300px;
+  object-fit:scale-down;
+  object-position: center;
+}
+
+
+aside {
+  flex: 1;
+  background-color: #FF4500;
+  color: #fff;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  
+}
+
+@media screen and (max-width: 1000px) {
+   .konten, aside {
+     width: 100%;
+     padding: 0;
+   }
+ }
+
+
+@media screen and (max-width: 1200px) {
+ main {
+   flex-flow: column nowrap;
+ }
+ main aside {
+   align-self: center;
+ }
+}
+
+
+@media screen and (max-width: 768px) {
+   nav {
+       justify-content: center;
+   }
+   main aside {
+       align-self: stretch;
+   }
+}
+
+aside h2 {
+  text-align: center;
+}
+
+.karuta img {
+  max-width: 200px;
+}
+
+.karuta {
+  text-align: justify;
+}
+
+main div {
+  color: #fff;
+}
+
+main article {
+  text-align: justify ;
+}
